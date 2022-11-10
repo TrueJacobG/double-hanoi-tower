@@ -1,7 +1,5 @@
 
 7
-run.txt,3\8\38c5a981ccab15704b9019915f3f9041fe13185b
-7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 V
 &src/main/java/printer/utils/Color.java,6\b\6b35936d4eed4cfafb2e53c731753ea1b0c4fa8c
@@ -15,9 +13,5 @@ Y
 )src/main/java/hanoi/SingleHanoiTower.java,6\6\668354455cdf1649edc179b6d9d399b6bceb2c02
 Y
 )src/main/java/printer/ConsolePrinter.java,6\2\624c98d73a46935ab5bbba1b198858247b8787a0
-U
-%src/main/java/hanoi/utils/Solver.java,2\c\2c1c9b6b26b300923c9e43b33042795a3beac942
 S
 #src/main/java/hanoi/HanoiTower.java,3\0\307faaa0d75aed541b659662012961e8bfa938c0
-G
-src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10

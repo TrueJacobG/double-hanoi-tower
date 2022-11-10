@@ -20,6 +20,10 @@ public class Solver {
         this.moves = moves;
     }
 
+    public int getHeight(){
+        return height;
+    }
+
     public List<List<Block>> getSticks() {
         return sticks;
     }
@@ -42,7 +46,7 @@ public class Solver {
         }
 
         if (index == -1) {
-            System.out.println("ILLEGAL RUCH, brak blokow na stozku");
+            System.out.printf("ILLEGAL RUCH, brak blokow na stozku %d\n", from);
             return false;
         }
 

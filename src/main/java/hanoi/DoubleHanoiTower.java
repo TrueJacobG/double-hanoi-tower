@@ -30,7 +30,7 @@ public class DoubleHanoiTower implements HanoiTower {
             String color = isEmpty ? " " : "B";
 
             List<Block> temp = new ArrayList<>();
-            for (int i = 0; i < height; i++) {
+            for (int i = 0; i < height/2; i++) {
                 temp.add(new Block(height - i, color));
                 if (isEmpty) {
                     color = " ";
@@ -58,23 +58,33 @@ public class DoubleHanoiTower implements HanoiTower {
     }
 
     private void prevHanoi(List<int[]> moves, int height) {
-        while (height > 1) {
-            if (height % 2 == 0) {
-                doubleHanoi(moves, height - 1, 1, 3, 2);
-            } else {
-                doubleHanoi(moves, height - 1, 2, 3, 1);
-            }
-            height--;
+        height -= 2;
+        doubleHanoi(moves, height, 1, 2, 3);
+        moves.add(new int[]{1, 3});
+
+        while (height > 2) {
+            height -= 2;
+            doubleHanoi(moves, height, 2, 3, 1);
+            moves.add(new int[]{2, 1});
+            doubleHanoi(moves, height, 3, 1, 2);
+            moves.add(new int[]{2, 3});
+            height -= 2;
+            doubleHanoi(moves, height, 1, 2, 3);
+            moves.add(new int[]{1, 3});
+        }
+
+        if (height > 0) {
+            moves.add(new int[]{2, 1});
+            moves.add(new int[]{2, 3});
         }
     }
 
     private void doubleHanoi(List<int[]> moves, int height, int a, int b, int c) {
-        if (height == 1) {
-            moves.add(new int[]{a, c});
-        } else {
-            doubleHanoi(moves, height - 1, a, c, b);
-            doubleHanoi(moves, 1, a, b, c);
-            doubleHanoi(moves, height - 1, b, a, c);
+        if (height > 0) {
+            doubleHanoi(moves, height - 2, a, c, b);
+            moves.add(new int[]{a, b});
+            moves.add(new int[]{a, b});
+            doubleHanoi(moves, height - 2, c, b, a);
         }
     }
 
@@ -85,6 +95,7 @@ public class DoubleHanoiTower implements HanoiTower {
             if (errorOccurred) {
                 return;
             }
+
             checkIfCompleted();
         }
         solver.print();
@@ -100,8 +111,8 @@ public class DoubleHanoiTower implements HanoiTower {
         for (int i = 0; i < solver.getSticks().size(); i++) {
             List<Block> stick = solver.getSticks().get(i);
 
-            boolean fullBlack = stick.stream().map(Block::getColor).collect(Collectors.joining("")).contains("BBB");
-            boolean fullWhite = stick.stream().map(Block::getColor).collect(Collectors.joining("")).contains("WWW");
+            boolean fullBlack = stick.stream().map(Block::getColor).collect(Collectors.joining("")).contains(new String(new char[solver.getHeight()/2]).replace("\0", "B"));
+            boolean fullWhite = stick.stream().map(Block::getColor).collect(Collectors.joining("")).contains(new String(new char[solver.getHeight()/2]).replace("\0", "W"));
 
             if (fullBlack || fullWhite) {
                 completedSticks++;

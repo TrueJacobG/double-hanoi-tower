@@ -1,1 +1,1 @@
-java -cp .\double_hanoi_tower-1.0-SNAPSHOT.jar Main double 3 yes
+java -cp .\target\double_hanoi_tower-1.0-SNAPSHOT.jar Main 3 double no
