@@ -1,0 +1,21 @@
+
+7
+java:S1643"Use a StringBuilder instead.(Œşâúÿÿÿÿ
+2
+java:S1643"Use a StringBuilder instead.(ï›³î
+1
+java:S1643""Use a StringBuilder instead.(ş¡›
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ºñÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+g
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ø¶–É
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ø¶–É
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(ºñÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(Ñ½úÿÿÿÿ
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(ì™î€ÿÿÿÿÿ8ãÍŒÆ0
+n
+java:S34574"Q%n should be used in place of \n to produce the platform-specific line separator.(¹‡§ì8œãÍŒÆ0
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(¹‡§ì8ŸÏŒÆ0

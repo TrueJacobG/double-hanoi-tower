@@ -1,0 +1,11 @@
+
+T
+java:S1172"2Remove this unused method parameter "isPrintable".(‘Ç÷’ÿÿÿÿÿ8âÓÕŒÆ0
+N
+java:S18546"8Remove this useless assignment to local variable "temp".(ìÍÈÍ
+y
+java:S22345"WParameters to hanoi have the same names but not the same order as the method arguments.(ûáí„ÿÿÿÿÿ8Ã¹½ÊÂ0
+?
+java:S14816")Remove this unused "temp" local variable.(ìÍÈÍ
+t
+java:S22348"WParameters to hanoi have the same names but not the same order as the method arguments.(§«ö·8Ä¹½ÊÂ0

@@ -1,0 +1,1 @@
+java -cp .\double_hanoi_tower-1.0-SNAPSHOT.jar Main
