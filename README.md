@@ -1,8 +1,8 @@
-#### Double Hanoi Tower
+#### Single/Double Hanoi Tower
 
 ---
 
-##### Double Hanoi Solver + Visualization
+##### Single/Double Hanoi Solver + Visualization
 
 ---
 
